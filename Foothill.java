@@ -55,7 +55,7 @@ class TranspoFrame  extends JFrame
          String strFriendName;
          
          strFriendName = txtMyTextArea.getText();
-         if (strFriendName != null && strFriendName.length() >=2)
+         if (strFriendName != null && strFriendName.length() >=1)
          {
             char first = strFriendName.charAt(0);
             if (Character.isLetter(first))
@@ -69,7 +69,7 @@ class TranspoFrame  extends JFrame
          
          // if we fall through they have unacceptable friend's name
          JOptionPane.showMessageDialog(null, 
-            "Name must be at least two chars and start with letter.");
+            "Name must be at least one char and start with letter.");
          return;
       }
    } // end inner class SeeFriendListener
